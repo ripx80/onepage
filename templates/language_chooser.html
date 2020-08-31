@@ -1,0 +1,22 @@
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+{% get_language_info for CURRENT_LANG as lang %}
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            {{lang.name_local}} <span class="caret"></span>
+          </button>
+
+          <ul class="dropdown-menu" role="menu">
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <li><a href="#" onclick="setLang('{{ language.code }}');">
+                        {{ language.name_local }}
+                    </a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <form id="langForm" action="{% url 'set_language' %}" method="post" style="display:none;">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="/" />
+            <input name="language" type="hidden" value="" />
+        </form>

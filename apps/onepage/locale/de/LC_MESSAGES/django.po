@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-24 13:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.py:36
+msgid "Basic"
+msgstr "Basis"
+
+#: admin.py:54 admin.py:80 admin.py:106
+msgid "The selected entries are now at the top of your page."
+msgstr "Die ausgewählten Einträge sind jetzt am Anfang der Seite."
+
+#: admin.py:55 admin.py:81 admin.py:107
+msgid "Put entries on top"
+msgstr "Setze die Einträge auf den Anfang"
+
+#: models.py:10
+#, fuzzy
+msgid "label name"
+msgstr "Nachname"
+
+#: models.py:10
+msgid "label name to contact"
+msgstr "Label Name zum Kontakt"
+
+#: models.py:14 models.py:21
+msgid "project"
+msgstr "Projekt"
+
+#: models.py:15 models.py:22
+msgid "projects"
+msgstr "Projekte"
+
+#: models.py:25
+msgid "page"
+msgstr "Seite"
+
+#: models.py:28
+msgid "client"
+msgstr "Kunde"
+
+#: models.py:29
+msgid "clients"
+msgstr "Kunden"
+
+#: models.py:35
+msgid "forname"
+msgstr "Vorname"
+
+#: models.py:36
+msgid "lastname"
+msgstr "Nachname"
+
+#: models.py:37
+msgid "alias"
+msgstr ""
+
+#: models.py:38 models.py:52
+msgid "create date"
+msgstr "Erstellungs Datum"
+
+#: models.py:39
+msgid "member description"
+msgstr "Mitglied Beschreibung"
+
+#: models.py:39
+msgid "write something about the member"
+msgstr "schreibe etwas über das Mitglied."
+
+#: models.py:43
+msgid "member"
+msgstr "Mitglied"
+
+#: models.py:44
+msgid "members"
+msgstr "Mitglieder"
+
+#: models.py:50
+msgid "name"
+msgstr "Name"
+
+#: models.py:51
+msgid "subname"
+msgstr "zusätlicher Name"
+
+#: models.py:53
+msgid "point range"
+msgstr "Punkte Bereich"
+
+#: models.py:53
+msgid "please select a range"
+msgstr "bitte wähle einen Bereich"
+
+#: models.py:54
+msgid "skill points"
+msgstr "Fähigkeits Punkte"
+
+#: models.py:54
+msgid "give your skill points"
+msgstr "vergib deine Fähigkeits Punkte"
+
+#: models.py:55
+msgid "skill description"
+msgstr "Fähigkeitsbeschreibung"
+
+#: models.py:55
+msgid "please insert some skill description"
+msgstr "bitte füge einige Fähigkeitsbeschreibungen hinzu"
+
+#: models.py:56
+msgid "short description"
+msgstr "Kurze Beschreibung"
+
+#: models.py:57
+msgid "skill_time"
+msgstr "Fähigkeitszeitraum"
+
+#: models.py:57
+msgid "set your skill time"
+msgstr "Setze deinen Fähigkeitszeitraum"
+
+#: models.py:58
+#, fuzzy
+msgid "featured skill"
+msgstr "Setze deinen Fähigkeitszeitraum"
+
+#: models.py:58
+msgid "feature this skill"
+msgstr "Hebe diese Fähigkeit hervor"
+
+#: models.py:62
+#, fuzzy
+msgid "skill"
+msgstr "Fähigkeit"
+
+#: models.py:63
+#, fuzzy
+msgid "skills"
+msgstr "Fähigkeiten"
+
+#: models.py:67 models.py:68
+msgid "policy"
+msgstr "Policy"
+
+#: templates/project/project_about.html:3
+msgid "About"
+msgstr "Über"
+
+#: templates/project/project_skills.html:5
+msgid "SKILLS"
+msgstr ""
+
+#: templates/project/project_skills.html:19
+#, fuzzy
+msgid "since"
+msgstr "seit"

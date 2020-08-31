@@ -1,0 +1,342 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-01 14:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: apps/onepage/admin.py:21
+msgid "Landing Page"
+msgstr ""
+
+#: apps/onepage/admin.py:22 apps/onepage/models.py:46
+#: apps/onepage/models.py:53 apps/onepage/models.py:54
+msgid "Intro"
+msgstr ""
+
+#: apps/onepage/admin.py:23
+msgid "Callout"
+msgstr ""
+
+#: apps/onepage/admin.py:24
+msgid "Map"
+msgstr ""
+
+#: apps/onepage/admin.py:31 apps/onepage/models.py:150
+msgid "Services"
+msgstr ""
+
+#: apps/onepage/admin.py:38
+#: apps/onepage/templates/onepage/onepage_base.html:25
+msgid "Partner"
+msgstr ""
+
+#: apps/onepage/admin.py:49 apps/onepage/models.py:222
+#: apps/onepage/templates/onepage/onepage_base.html:27
+msgid "Contact"
+msgstr ""
+
+#: apps/onepage/admin.py:50
+msgid "Phonenumbers"
+msgstr ""
+
+#: apps/onepage/admin.py:51
+msgid "Mail Adresses"
+msgstr ""
+
+#: apps/onepage/admin.py:70 apps/onepage/models.py:251
+msgid "Social"
+msgstr ""
+
+#: apps/onepage/models.py:16
+msgid "last updated"
+msgstr ""
+
+#: apps/onepage/models.py:17
+msgid "created date"
+msgstr ""
+
+#: apps/onepage/models.py:48
+msgid "Intro Title"
+msgstr ""
+
+#: apps/onepage/models.py:49
+msgid "Intro Description Field"
+msgstr ""
+
+#: apps/onepage/models.py:49 apps/onepage/models.py:145
+#: apps/onepage/models.py:272 apps/onepage/models.py:287
+msgid "please insert some description here"
+msgstr ""
+
+#: apps/onepage/models.py:59
+msgid "Callout Image"
+msgstr ""
+
+#: apps/onepage/models.py:62
+msgid "Callout Title"
+msgstr ""
+
+#: apps/onepage/models.py:66
+msgid "callout"
+msgstr ""
+
+#: apps/onepage/models.py:67
+msgid "callouts"
+msgstr ""
+
+#: apps/onepage/models.py:84
+msgid "Map Link"
+msgstr ""
+
+#: apps/onepage/models.py:85
+msgid "Map Source"
+msgstr ""
+
+#: apps/onepage/models.py:87
+msgid "Map Title"
+msgstr ""
+
+#: apps/onepage/models.py:91
+msgid "map"
+msgstr ""
+
+#: apps/onepage/models.py:92
+msgid "maps"
+msgstr ""
+
+#: apps/onepage/models.py:99
+msgid "Landing Image"
+msgstr ""
+
+#: apps/onepage/models.py:102
+msgid "Landing Title"
+msgstr ""
+
+#: apps/onepage/models.py:103
+msgid "Landing Subtitle"
+msgstr ""
+
+#: apps/onepage/models.py:107 apps/onepage/models.py:108
+msgid "Onepage"
+msgstr ""
+
+#: apps/onepage/models.py:144
+msgid "Service Title"
+msgstr ""
+
+#: apps/onepage/models.py:145
+msgid "Service Description Field"
+msgstr ""
+
+#: apps/onepage/models.py:149
+#: apps/onepage/templates/onepage/onepage_base.html:23
+msgid "Service"
+msgstr ""
+
+#: apps/onepage/models.py:166
+msgid "Portfolio Image"
+msgstr ""
+
+#: apps/onepage/models.py:167
+msgid "Portfolio Link"
+msgstr ""
+
+#: apps/onepage/models.py:169
+msgid "Portfolio Title"
+msgstr ""
+
+#: apps/onepage/models.py:173 apps/onepage/models.py:174
+msgid "Portfolio"
+msgstr ""
+
+#: apps/onepage/models.py:191
+msgid "Name"
+msgstr ""
+
+#: apps/onepage/models.py:192 apps/onepage/models.py:196
+msgid "Phone Number"
+msgstr ""
+
+#: apps/onepage/models.py:193
+msgid "Fax Number"
+msgstr ""
+
+#: apps/onepage/models.py:197
+msgid "Phone Numbers"
+msgstr ""
+
+#: apps/onepage/models.py:203
+msgid "Email Adress"
+msgstr ""
+
+#: apps/onepage/models.py:206 apps/onepage/models.py:212
+msgid "Mail"
+msgstr ""
+
+#: apps/onepage/models.py:207
+msgid "Mails"
+msgstr ""
+
+#: apps/onepage/models.py:210
+msgid "Phone"
+msgstr ""
+
+#: apps/onepage/models.py:211
+msgid "PLZ"
+msgstr ""
+
+#: apps/onepage/models.py:215
+msgid "Contact Title"
+msgstr ""
+
+#: apps/onepage/models.py:216
+msgid "Country"
+msgstr ""
+
+#: apps/onepage/models.py:217
+msgid "City"
+msgstr ""
+
+#: apps/onepage/models.py:218
+msgid "Street"
+msgstr ""
+
+#: apps/onepage/models.py:223
+msgid "Contacts"
+msgstr ""
+
+#: apps/onepage/models.py:246
+msgid "Social Link"
+msgstr ""
+
+#: apps/onepage/models.py:247
+msgid "Social Title"
+msgstr ""
+
+#: apps/onepage/models.py:252
+msgid "Socials"
+msgstr ""
+
+#: apps/onepage/models.py:268 apps/onepage/models.py:283
+#: apps/onepage/models.py:300
+msgid "Slug"
+msgstr ""
+
+#: apps/onepage/models.py:269 apps/onepage/models.py:284
+#: apps/onepage/models.py:301
+msgid "A slug is a short name which uniquely identifies the item"
+msgstr ""
+
+#: apps/onepage/models.py:271
+msgid "Site-Notice Title"
+msgstr ""
+
+#: apps/onepage/models.py:272
+msgid "Site-Notice Content"
+msgstr ""
+
+#: apps/onepage/models.py:276 apps/onepage/models.py:277
+#: templates/base.html:52
+msgid "site notice"
+msgstr ""
+
+#: apps/onepage/models.py:286
+msgid "Data Policy Title"
+msgstr ""
+
+#: apps/onepage/models.py:287
+msgid "Data Policy"
+msgstr ""
+
+#: apps/onepage/models.py:291 apps/onepage/models.py:292
+#: templates/base.html:53
+msgid "data policy"
+msgstr ""
+
+#: apps/onepage/models.py:299
+msgid "Title"
+msgstr ""
+
+#: apps/onepage/models.py:302
+msgid "Content"
+msgstr ""
+
+#: apps/onepage/models.py:302
+msgid "Please only short messages. You have only 256 chars"
+msgstr ""
+
+#: apps/onepage/models.py:305 apps/onepage/models.py:306
+msgid "News"
+msgstr ""
+
+#: apps/onepage/templates/onepage/data_policy.html:16
+#: apps/onepage/templates/onepage/site_notice.html:16
+msgid "back to Home"
+msgstr ""
+
+#: apps/onepage/templates/onepage/onepage.html:68
+msgid "Our Partners"
+msgstr ""
+
+#: apps/onepage/templates/onepage/onepage_base.html:19
+msgid "Home"
+msgstr ""
+
+#: apps/onepage/templates/onepage/onepage_base.html:21
+msgid "About"
+msgstr ""
+
+#: apps/onepage/templates/onepage/onepage_base.html:39
+msgid "Find Out More"
+msgstr ""
+
+#: settings/base.py:85
+msgid "Deutsch"
+msgstr ""
+
+#: settings/base.py:86
+msgid "English"
+msgstr ""
+
+#: settings/base.py:87
+msgid "Czech"
+msgstr ""
+
+#: templates/404.html:3 templates/404.html.py:7
+msgid "Page not found"
+msgstr ""
+
+#: templates/404.html:8
+msgid "Sorry, but the requested page could not be found."
+msgstr ""
+
+#: templates/404.html:10
+msgid "Return to a existing Page"
+msgstr ""
+
+#: templates/500.html:3
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:8
+msgid ""
+"An unexpected error seems to have occured. Why not try refreshing your page?"
+msgstr ""
+
+#: templates/500.html:9
+msgid "Or you can contact us if the problem persists."
+msgstr ""

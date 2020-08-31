@@ -1,0 +1,12 @@
+{% extends 'error.html' %}
+{% load i18n %}
+{% block title %}{% trans "Page not found" %}{% endblock %}
+{%block content%}
+    <p><i class="fa fa-wheelchair scroll fa-4x"></i></p>
+    <h1>404</h1>
+    <h2>{% trans "Page not found" %}</h2>
+    <p>{% trans "Sorry, but the requested page could not be found." %}</p>
+    <p>
+        <a href="{% url 'index' %}" class="btn btn-default btn-lg btn-primary">{% trans "Return to a existing Page" %}</a>
+    </p>
+{%endblock%}

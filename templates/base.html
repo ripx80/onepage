@@ -1,0 +1,81 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="follow, all" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{% block meta-description %}{% endblock %}">
+        <meta name="keywords" content="{% block meta-keywords %}{% endblock %}" />
+        <meta name="author" content="{% block meta-author %}{% endblock %}">
+
+        <meta name="robots" content="index,nofollow" />
+
+        <title>{% block head_title %}{% endblock %}</title>
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="{% static 'skin/js/css3-mediaqueries.js' %}"></script>
+        <![endif]-->
+
+        <!-- Bootstrap -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'skin/fonts/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" >
+        {% compress css %}
+        <!-- SKIN -->
+        <link rel="stylesheet" media="all" href="{% static 'skin/css/style.css' %}" />
+        <link href="{% static 'cookie_banner/css/cookie_banner.css' %}" rel="stylesheet">
+        {% endcompress %}
+        {% block stylesheets %}{% endblock %}
+
+    </head>
+    <body>
+        {%block content%}{%endblock%}
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <ul class="list-inline">
+                            {%block socials%}{%endblock%}
+                        </ul>
+                        <div class="top-scroll">
+                            <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6 text-center"><h4><a href="{% url 'site_notice' %}">{% trans "site notice" %}</a></h4></div>
+                            <div class="col-md-6 text-center"><h4><a href="{% url 'data_policy' %}">{% trans "data policy" %}</a></h4></div>
+                        </div>
+                        <div class="row">
+                            <p>{%block copyright%}{%endblock%}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <!-- JS -->
+        <script async src="{% static 'jquery/jquery-2.1.0.min.js' %}"></script>
+        <script async src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <script async src="{% static 'cookie_banner/js/cookie_banner.js' %}"></script>
+
+        {% compress js %}
+        <script src="{% static 'skin/js/custom.js' %}"></script>
+        <!-- modernizr -->
+        <script async src="{% static 'skin/js/modernizr.js' %}"></script>
+        {% endcompress %}
+
+        <!-- END -->
+    </body>
+
+</html>
+
+
+

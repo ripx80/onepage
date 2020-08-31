@@ -1,0 +1,10 @@
+{% extends 'error.html' %}
+{% load i18n %}
+{% block title %}{% trans "Internal Server Error" %}{% endblock %}
+{%block content%}
+    <p><i class="fa fa-gears scroll fa-4x"></i></p>
+    <h1>500</h1>
+    <h2>BAAAAMM!!!!</h2>
+    <p>{% trans "An unexpected error seems to have occured. Why not try refreshing your page?" %}<p/>
+    <p>{% trans "Or you can contact us if the problem persists." %}</p>
+{%endblock%}

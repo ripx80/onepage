@@ -1,0 +1,27 @@
+You can access a :ref:`listing of all available settings
+<available-settings>`. For a list of deprecated settings see
+:ref:`deprecated-settings`.
+
+You can find both in the :doc:`settings reference document
+</ref/settings>`.
+
+.. setting:: ADMINS
+
+ADMINS
+------
+
+Default: ``()`` (Empty tuple)
+
+A tuple that lists people who get code error notifications. When
+``DEBUG=False`` and a view raises an exception, Django will email these people
+with the full exception information. Each member of the tuple should be a tuple
+of (Full name, email address). Example::
+
+    (('John', 'john@example.com'), ('Mary', 'mary@example.com'))
+
+Note that Django will email *all* of these people whenever an error happens.
+See :doc:`/howto/virtualenv` for more information.
+
+.. code-block:: python
+
+    print 'hello world'

@@ -1,0 +1,138 @@
+*Build General Tests for all Apps
+    * Validator
+
+
+Custom Tests
+
+
+
+    unittest / unittest2
+    doctest
+    nose
+
+
+
+*What to test*
+Custom Methods
+views, forms, template tags, context processors, middleware, management commands, etc.
+
+
+
+
+ --keepdb
+
+******
+
+Workflow for testing
+
+
+
+*******
+
+**Test Helpers
+
+django-test-utils #testmaker
+https://pythonhosted.org/django-test-utils/testmaker.html
+
+Selenium + PhantomJS
+http://blog.wercker.com/2013/11/28/django-selenium.html
+https://realpython.com/blog/python/headless-selenium-testing-with-python-and-phantomjs/
+*******
+Mommy
+''create test input for models''
+https://github.com/vandersonmota/model_mommy
+
+
+**** In Use
+Write some doku
+
+**coverage**
+https://realpython.com/blog/python/testing-in-django-part-1-best-practices-and-examples/
+''show percentage of testing models''
+
+coverage run manage.py test -v 2
+mkdir -p tests/coverage
+coverage html -d tests/coverage
+
+*** Todoing***
+Cache Manifest File
+Google Maps include without iframes
+    Problem: https://developer.mozilla.org/en-US/docs/Web/HTTP/X-Frame-Options
+
+*** Project Reports
+
+Coverage: Show Code Testing Report
+
+
+
+*** Play with geodjango
+http://blog.wercker.com/2013/11/18/django-16.html
+
+*************
+
+
+
+from hamcrest.core.base_matcher import BaseMatcher
+from pyquery.pyquery import PyQuery
+from helpers.tests import Multipart
+
+class ContainsValidHTML(BaseMatcher):
+
+    def __init__(self):
+        pass
+
+    def _matches(self, template):
+        responseFromW3 = Multipart.post_multipart('validator.w3.org', '/check', {'fragment': template} )
+        pyQuery = PyQuery(responseFromW3)
+        return pyQuery('#congrats') != []
+
+    def describe_to(self, description):
+        description.append_text('ContainsValidHTML')
+
+
+containingValidHTMLOnly = ContainsValidHTML
+
+
+import unittest
+from selenium import webdriver
+
+class TestSignup(unittest.TestCase):
+
+    def setUp(self):
+        self.driver = webdriver.Firefox()
+
+    def test_signup_fire(self):
+        self.driver.get("http://localhost:8000/add/")
+        self.driver.find_element_by_id('id_title').send_keys("test title")
+        self.driver.find_element_by_id('id_body').send_keys("test body")
+        self.driver.find_element_by_id('submit').click()
+        self.assertIn("http://localhost:8000/", self.driver.current_url)
+
+    def tearDown(self):
+        self.driver.quit
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
+
+##### Clean from base.html
+        <meta http-equiv="Cache-Control" content="0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="publisher" content="{% block meta-publisher %}{% endblock %}" />
+
+
+<!-- Map -->
+        <div id="contact" class="map">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{%block map_src%}{%endblock%}">
+            <br />
+            <small>
+                <a href="{%block map_link%}{%endblock%}"></a>
+            </small>
+            </iframe>
+        </div>
+        <!-- /Map -->
+        {%block map_title%}{{onepage.map_title}}{%endblock%}
+{%block map_src%}{{onepage.map_src}}{%endblock%}
+{%block map_link%}{{onepage.map_link}}{%endblock%}

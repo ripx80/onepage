@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Models &mdash; Onepage 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Onepage 1.1 documentation" href="../index.html" />
+    <link rel="prev" title="ADMINS" href="../topics/settings.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../topics/settings.html" title="ADMINS"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Onepage 1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-apps.onepage.models">
+<span id="models"></span><h1>Models<a class="headerlink" href="#module-apps.onepage.models" title="Permalink to this headline">¶</a></h1>
+<p>Onepage Project Modules.</p>
+<dl class="class">
+<dt id="apps.onepage.models.Contact">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Contact</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Contact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contact(id, last_update, create_date, plz)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.ContactTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">ContactTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.ContactTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>ContactTranslation(id, title, country, city, street, language_code, master_id)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.CoreObject">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">CoreObject</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.CoreObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract Core Object</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.DataPolicy">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">DataPolicy</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.DataPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataPolicy(id, last_update, create_date, slug)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.DataPolicyTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">DataPolicyTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.DataPolicyTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>DataPolicyTranslation(id, title, content, language_code, master_id)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.Mail">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Mail</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mail(id, last_update, create_date, mail)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.News">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">News</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.News" title="Permalink to this definition">¶</a></dt>
+<dd><p>News(id, last_update, create_date, title, slug, content)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.Onepage">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Onepage</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Onepage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Landingpage</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.OnepageTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">OnepageTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.OnepageTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>OnepageTranslation(id, intro_title, intro_description, callout_title, map_title, title, landing_subtitle, language_code, master_id)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.Phone">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Phone</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Phone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Phone(id, last_update, create_date, name, number, fax)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.Portfolio">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Portfolio</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Portfolio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Portfolio(id, last_update, create_date, image, link)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.PortfolioTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">PortfolioTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.PortfolioTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>PortfolioTranslation(id, title, language_code, master_id)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.Services">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Services</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Services" title="Permalink to this definition">¶</a></dt>
+<dd><p>Services(id, last_update, create_date, display)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.ServicesTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">ServicesTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.ServicesTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>ServicesTranslation(id, title, service_description, language_code, master_id)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.SiteNotice">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">SiteNotice</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.SiteNotice" title="Permalink to this definition">¶</a></dt>
+<dd><p>SiteNotice(id, last_update, create_date, slug)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.SiteNoticeTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">SiteNoticeTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.SiteNoticeTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>SiteNoticeTranslation(id, title, content, language_code, master_id)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.Social">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">Social</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.Social" title="Permalink to this definition">¶</a></dt>
+<dd><p>Social(id, last_update, create_date, network)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="apps.onepage.models.SocialTranslation">
+<em class="property">class </em><tt class="descclassname">apps.onepage.models.</tt><tt class="descname">SocialTranslation</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#apps.onepage.models.SocialTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>SocialTranslation(id, link, title, language_code, master_id)</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../topics/settings.html"
+                        title="previous chapter">ADMINS</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/modules/models.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../topics/settings.html" title="ADMINS"
+             >previous</a> |</li>
+        <li><a href="../index.html">Onepage 1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Meertec.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

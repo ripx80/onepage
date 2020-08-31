@@ -1,0 +1,8 @@
+#!/bin/bash
+ENV="../env"
+
+export VIRTUAL_ENV=$ENV
+export PATH="$VIRTUAL_ENV/bin:$PATH"
+unset PYTHON_HOME
+exec "${@:-$SHELL}"
+exit 0

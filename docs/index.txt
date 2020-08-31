@@ -1,0 +1,27 @@
+.. Onepage documentation master file, created by
+   sphinx-quickstart on Thu Sep 11 14:56:17 2014.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Onepage's documentation!
+===================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   
+   ref/intro
+   ref/tutorial
+   ref/settings.txt
+   topics/settings.txt
+   modules/models.txt
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

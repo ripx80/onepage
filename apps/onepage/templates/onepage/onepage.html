@@ -1,0 +1,163 @@
+{% extends 'onepage/onepage_base.html' %}
+{% load i18n %}
+{% load staticfiles %}
+{% load compress %}
+{% load thumbnail %}
+
+{% block stylesheets%}
+        <style type="text/css">
+       .callout {
+           background: url({{ MEDIA_URL }}{{onepage.callout_image}}) no-repeat center center fixed;
+       }
+       .header{
+            background: url({{ MEDIA_URL }}{{onepage.image}}) no-repeat center center fixed;
+       }
+       @media (max-width: 1280px) {
+            .header {
+                background: url({{ onepage.image|thumbnail_url:'dp' }}) no-repeat center center fixed;
+            }
+            .callout {
+                background: url({{ onepage.callout_image|thumbnail_url:'dp' }}) no-repeat center center fixed;
+            }
+       }
+       @media (max-width: 1024px) {
+            .header {
+                background: url({{ onepage.image|thumbnail_url:'tl' }}) no-repeat center center fixed;
+            }
+            .callout {
+                background: url({{ onepage.callout_image|thumbnail_url:'tl' }}) no-repeat center center fixed;
+            }
+       }
+       @media (max-width: 768px) {
+            .header {
+                background: url({{ onepage.image|thumbnail_url:'tp' }}) no-repeat center center fixed;
+            }
+            .callout {
+                background: url({{ onepage.callout_image|thumbnail_url:'tp' }}) no-repeat center center fixed;
+            }
+            .map {
+                height: 75%;
+            }
+        }
+        @media (max-width: 480px) {
+            .header {
+                background: url({{ onepage.image|thumbnail_url:'ml' }}) no-repeat center center fixed;
+            }
+            .callout {
+                background: url({{ onepage.callout_image|thumbnail_url:'ml' }}) no-repeat center center fixed;
+            }
+            .map {
+                height: 75%;
+            }
+        }
+        @media (max-width: 320px) {
+            .header {
+                background: url({{ onepage.image|thumbnail_url:'mp' }}) no-repeat center center fixed;
+            }
+            .callout {
+                background: url({{ onepage.callout_image|thumbnail_url:'sp' }}) no-repeat center center fixed;
+            }
+            .map {
+                height: 75%;
+            }
+        }
+        </style>
+{%endblock%}
+
+
+{% block meta-description %}Rausch Legal Services - Beratung in strafrechtlichen Belangen, Komplexe Länderübergreifende mehrsprachige Dienstleistungen in Deutsch,Tschechisch und Slowakisch{% endblock %}
+{% block meta-keywords %}www.rausch-legal-services.ch, rausch legal services, rausch-legal-services, legal, law, Anwalt, Recht, Schweiz, Russland, Slowakei, Tschechien{% endblock %}
+{% block meta-author %}Natasa Aregger Rausch, Rausch Legal Services{% endblock %}
+
+
+{% block head_title %}{{onepage.title}}{% endblock %}
+{% block title %}{{onepage.title}}{% endblock %}
+{% block menu_title%}{{onepage.title}}{%endblock%}
+
+
+{% block landing_title %}{{onepage.title}}{%endblock%}
+{% block landing_subtitle %}{{onepage.landing_subtitle}}{%endblock%}
+
+{%block intro_title%}{{onepage.intro_title}}{%endblock%}
+{%block intro_description%}{{onepage.intro_description}}{%endblock%}
+{%block intro_image%}{{ MEDIA_URL }}{{onepage.intro_image}}{%endblock%}
+{%block services%}
+    {%if services%}
+        {% for service in services %}
+            <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-1">
+                <div class="service-item">
+                    <i class="service-icon fa fa-{{service.display|default:'rocket'}}"></i>
+                    <h3>{{service.title}}</h3>
+                    <p>{{service.service_description|safe}}</p>
+                </div>
+            </div>
+        {%endfor%}
+    {%endif%}
+{%endblock%}
+{%block callout_title%}{{onepage.callout_title}}{%endblock%}
+{%block portfolio%}
+    {%if portfolio%}
+        <div class="row">
+            <div class="col-md-12 text-center"><h1>{% trans "Our Partners" %}</h1></div>
+        </div>
+        <br />
+        {%for port in portfolio%}
+            <div class="col-md-4 text-center">
+                <div class="portfolio-item">
+                    <a href="{{port.link}}">
+                        <img class="img-portfolio img-responsive" src="{{ MEDIA_URL }}{{port.image}}">
+                    </a>
+                    <h4><strong>{{port.title}}</strong></h4>
+                </div>
+            </div>
+        {%endfor%}
+    {%endif%}
+{%endblock%}
+
+{%block news%}
+    {%if news%}
+            <div class="row">
+            {%for new in news%}
+                <div class="col-md-4 text-center">
+                    <div class="portfolio-item">
+                        <h3>{{new.title}}</h3>
+                        <p>{{new.content}}</p>
+                    </div>
+                </div>
+            {%endfor%}
+            </div>
+        {%endif%}
+{%endblock%}
+
+{%block contact%}
+    {%if contacts%}
+        {% for contact in contacts %}
+            <div class="col-md-3 text-center">
+                <h3>{{contact.title}}</h3>
+                <div class="row"><div class="col-md-12">{{contact.street}}</div></div>
+                <div class="row"><div class="col-md-12">{{contact.plz|default:' '}}</div></div>
+                <div class="row"><div class="col-md-12">{{contact.country}}</div></div>
+                {%for phone in contact.phone.all%}
+                    <div class="row"><div class="col-md-12">{{phone}}</div></div>
+                {%endfor%}
+                {%for mail in contact.mail.all%}
+                    <div class="row"><div class="col-md-12">{{mail}}</div></div>
+                {%endfor%}
+
+            </div>
+        {%endfor%}
+    {%endif%}
+
+{%endblock%}
+{%block socials%}
+    {%if socials%}
+        {%for social in socials%}
+            <li><a href="{{social.link}}" alt="" title="{{social.title}}"><i class="fa fa-{{social.network}} fa-3x"></i></a></li>
+        {%endfor%}
+    {%endif%}
+{%endblock%}
+
+{%block copyright%}&copy; Rausch Legal Services{%endblock%}
+
+
+

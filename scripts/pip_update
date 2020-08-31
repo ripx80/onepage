@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in $(pip freeze | cut -d= -f1); do pip install --upgrade $i; done
+
+exit 0

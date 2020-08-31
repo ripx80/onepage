@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{%block content%}
+         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#top"><strong>{%block landing_title%}{%endblock%}</strong></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                        <li><a href="#top">{% trans "Home" %}</a>
+                        </li>
+                        <li><a href="#about">{% trans "About" %}</a>
+                        </li>
+                        <li><a href="#services">{% trans "Service" %}</a>
+                        </li>
+                        <li><a href="#portfolio">{% trans "Partner" %}</a>
+                        </li>
+                        <li><a href="#contact">{% trans "Contact" %}</a>
+                        </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </nav>
+     <!-- /Menu -->
+        {% load cookie_banner_tags %}
+        {% get_cookie_banner %}
+
+        <!-- Full Page Image Header Area -->
+        <div id="top" class="header">
+            <div class="vert-text">
+                <h2>{%block landing_subtitle%}{%endblock%}</h2>
+                <a href="#about" class="btn btn-default btn-lg"><strong>{%trans "Find Out More" %}</strong></a>
+                <p></p>
+                    {% include 'language_chooser.html' %}
+            </div>
+        </div>
+        <!-- /Full Page Image Header Area -->
+
+        <!-- Intro -->
+        <div id="about" class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h2>{%block intro_title%}{%endblock%}</h2>
+                        <p class="lead">{%block intro_description%}{%endblock%}</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img class="img-rounded img-responsive" src="{%block intro_image%}{%endblock%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Intro -->
+
+        <!-- Services -->
+        <div id="services" class="services">
+            <div class="container">
+                <div class="row">
+                {%block services%}{%endblock%}
+                </div>
+            </div>
+        </div>
+        <!-- /Services -->
+
+        <!-- Callout -->
+        <div class="callout">
+            <div class="vert-text">
+                <h1>{%block callout_title%}{%endblock%}</h1>
+            </div>
+        </div>
+        <!-- /Callout -->
+
+        <!-- News -->
+        <div id="news" class="news">
+            <div class="container">
+                    {%block news%}{%endblock%}
+            </div>
+        </div>
+        <!-- /News -->
+
+        <!-- Portfolio -->
+        <div id="portfolio" class="portfolio">
+            <div class="container">
+                    {%block portfolio%}{%endblock%}
+            </div>
+        </div>
+        <!-- /Portfolio -->
+
+        <!-- Contact -->
+        <div class="call-to-action">
+            <div class="container">
+                <div class="row">
+                    {%block contact%}{%endblock%}
+                </div>
+            </div>
+        </div>
+        <!-- /Contact -->
+
+{%endblock%}

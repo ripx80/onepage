@@ -1,0 +1,19 @@
+========
+Settings
+========
+
+...
+
+.. _available-settings:
+
+Available settings
+==================
+
+...
+
+.. _deprecated-settings:
+
+Deprecated settings
+===================
+
+...

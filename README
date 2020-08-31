@@ -1,0 +1,16 @@
+clone app.skin
+manage.py syncdb
+manage.py migrate
+pip install https://github.com/kristianoellegaard/django-hvad/tarball/master
+./manage.py compilemessages --locale=de --locale=cs --locale=en
+
+
+#cookie_banner
+django-classy-tags
+
+
+#django-ratelimit-backend - bug fix
+in views.py add this
+
+#bugfix for ?next redirect in django
+redirect_to='/admin'

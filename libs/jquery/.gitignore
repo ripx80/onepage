@@ -1,0 +1,5 @@
+*.pyc
+debug.log
+env/
+media/
+
